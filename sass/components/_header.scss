@@ -1,0 +1,85 @@
+.page {
+  @extend %page;
+}
+.header {
+  background-color: $main-bcg-cl;
+  padding: 24px 0;
+  border-bottom: 1px solid #ececec;
+}
+.header-conteiner {
+  @extend %conteiner;
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  @extend %resetlink;
+  font-family: $logo-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+}
+.accent {
+  color: $accent-txt-cl;
+}
+.nav {
+  margin-left: 93px;
+}
+.nav-list {
+  @extend %reset;
+  display: flex;
+  gap: 50px;
+}
+.link-nav {
+  @extend %resetlink;
+  position: relative;
+  &:hover,
+  &:focus {
+    color: $accent-txt-cl;
+  }
+}
+.active {
+  color: $btn-bcg-cl;
+}
+.link-nav,
+.link-contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  transition: color $perehid;
+}
+.active::after {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  bottom: -32px;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: $btn-bcg-cl;
+  border-radius: 2px;
+}
+.list-contact {
+  @extend %reset;
+  display: flex;
+  gap: 30px;
+  margin-left: auto;
+}
+.link-contact {
+  @extend %resetlink;
+  color: $text-cl;
+  &:hover,
+  &:focus {
+    color: $accent-txt-cl;
+  }
+}
+.link-contact__icon {
+  .link-contact:hover &,
+  .link-contact:focus & {
+    fill: $accent-txt-cl;
+  }
+  fill: $text-cl;
+  margin-right: 10px; 
+}

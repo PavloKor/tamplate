@@ -1,0 +1,74 @@
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: #f5f4fa;
+}
+.team-conteiner {
+  @extend %conteiner;
+  &__title {
+    @extend %reset;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: $main-letter-s;
+  }
+}
+.team-list {
+  @extend %reset;
+  display: flex;
+  gap: 30px;
+  &__item {
+    width: 270px;
+    background-color: $main-bcg-cl;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &__desc {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+.team-desc__name {
+  @extend %reset;
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+}
+.team-desc__position {
+  @extend %reset;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: $main-letter-s;
+  color: $text-cl;
+  margin-bottom: 16px;
+}
+.team-socials {
+  @extend %reset;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  &__link {
+    &:hover,&:focus {
+      color: $btn-txt-cl;
+      background-color: $btn-bcg-cl
+    }
+    @extend %reset;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      color: $icon-txt-cl;
+      background-color: $main-bcg-cl;
+      border-radius: 50%;
+      transition: color $perehid, background-color $perehid;
+    }
+  &__icon {
+    fill: currentColor;
+  }
+}

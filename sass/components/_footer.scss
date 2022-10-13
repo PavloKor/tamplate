@@ -1,0 +1,123 @@
+.footer {
+  padding: 60px 0;
+  background-color: $accent-bcg-cl;
+  &__conteiner {
+    @extend %conteiner;
+    display: flex;
+    align-items: baseline;
+  }
+}
+.footer-address {
+  margin-right: 70px;
+  &__logo {
+    @extend %logo;
+    @extend %resetlink;
+    display: block;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+}
+.address {
+  font-style: normal;
+  &__desc {
+    @extend %reset;
+    margin-bottom: 9px;
+    font-size: 14px;
+    line-height: $txt-line-h;
+    letter-spacing: $main-letter-s;
+    color: $adrs-txt-cl;
+  }
+}
+.address-list {
+  @extend %reset;
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  &__link {
+    @extend %resetlink;
+    font-size: 14px;
+    line-height: var(--main-line-h);
+    letter-spacing: var(--main-letter-s);
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+.footer-icons {
+  margin-right: auto;
+  &__title {
+    @extend %reset;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: $main-letter-s;
+    color: $main-bcg-cl;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+}
+.footer-socials {
+  @extend %reset;
+  display: flex;
+  gap: 10px;
+  &__link {
+      @extend %resetlink;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      color: $btn-txt-cl;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      transition: background-color $perehid;
+
+      &:hover, &:focus {
+        background-color: $btn-bcg-cl;
+      }
+    }
+    &__icon {
+      fill: currentColor;
+    }
+}
+.footer-form {
+  width: 570px;
+  &__title {
+    @extend %reset;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    color: $main-bcg-cl;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+}
+.form-group {
+  display: flex;
+  &__mail {
+    width: 358px;
+      margin-right: 12px;
+      padding: 13px 16px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: calc(20 / 16);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      background-color: transparent;
+      border-radius: 4px;
+  }
+  &__btn {
+    @extend %btn;
+    width: 200px;
+    font-weight: 700;
+    font-size: 16px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    &:focus,
+    &:hover {
+      background-color: $btn-act-bcg-cl;
+    }
+  } 
+}

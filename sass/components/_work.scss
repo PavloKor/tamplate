@@ -1,0 +1,40 @@
+.work {
+  padding-bottom: 94px;
+}
+.work-conteiner {
+  @extend %conteiner;
+  &__title {
+      @extend %reset;
+      text-align: center;
+      margin-bottom: 50px;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: calc(42 / 36);
+      letter-spacing: $main-letter-s;
+    }
+}
+.work-list {
+  @extend %reset;
+  display: flex;
+  gap: 30px;
+  &__group {
+    position: relative;
+  }
+  &__desc {
+    @extend %reset;
+    position: absolute;
+    top: 224px;
+    left: 0%;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-align: center;
+  
+    padding: 27px;
+    color: $adrs-txt-cl;
+    background: rgba(47, 48, 58, 0.8);
+  }
+}

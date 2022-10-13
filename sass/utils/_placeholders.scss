@@ -1,0 +1,81 @@
+%reset {
+  margin: 0;
+  padding: 0%;
+  list-style: none;
+}
+%resetlink {
+  text-decoration: none;
+  color: currentColor;
+}
+%page {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: $main-line-h;
+  letter-spacing: $main-letter-s;
+  color: $main-txt-cl;
+  background-color: $main-bcg-cl;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+%conteiner {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+} 
+%btn {
+  width: 216px;
+  padding: 10px 32px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: $btn-bcg-cl;
+  color: $btn-txt-cl;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  letter-spacing: $main-letter-s;
+  transition: background-color var(--perehid);
+}
+%filter-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  background-color: $btn-bcg-cl;
+  color: $btn-txt-cl;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  letter-spacing: $main-letter-s;
+  border-radius: 4px;
+
+}
+%logo {
+  font-family: $logo-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+}
+%is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity $perehid, visibility $perehid;
+}
+%textarea {
+  resize: none;
+}
+%visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}

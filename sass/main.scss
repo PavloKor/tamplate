@@ -1,0 +1,26 @@
+@import "./utils/vars";
+@import "./utils/placeholders";
+@import "./components/header";
+@import "./components/slogan";
+@import "./components/about";
+@import "./components/work";
+@import "./components/team";
+@import "./components/client";
+@import "./components/footer";
+@import "./components/modal";
+@import "./components/portfolio-hero";
+@import "./components/filter-group";
+@import "./components/projects";
+
+
+
+
+body {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: var(--main-line-h);
+  letter-spacing: var(--main-letter-s);
+  color: var(--main-txt-cl);
+  background-color: var(--main-bcg-cl);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
